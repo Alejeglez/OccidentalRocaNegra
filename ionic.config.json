@@ -1,0 +1,7 @@
+{
+  "name": "OccidentalRocaNegra",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
