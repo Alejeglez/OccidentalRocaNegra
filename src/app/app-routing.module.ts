@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'reservar',
     loadChildren: () => import('./pages/reservar/reservar.module').then( m => m.ReservarPageModule)
   },
+  {
+    path: 'habitaciones',
+    loadChildren: () => import('./pages/habitaciones/habitaciones.module').then( m => m.HabitacionesPageModule)
+  },
 ];
 
 @NgModule({
