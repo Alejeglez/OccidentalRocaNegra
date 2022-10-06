@@ -1,0 +1,43 @@
+<ion-header [translucent]="true" collapse = "ios">
+  <ion-toolbar>
+    <ion-title>
+      Occidental Roca Negra
+    </ion-title>
+    <ion-buttons slot = "start">
+    <ion-menu-button menu = "main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-list slot="end" id = "languages">
+      <ion-item>
+        <ion-select interface="dropdownselection" placeholder="Idioma" >
+          <ion-select-option value="español">Esp</ion-select-option>
+          <ion-select-option value="ingles">Eng</ion-select-option>
+          <ion-select-option value="aleman">Deu</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content pading class="background">
+  <ion-card>
+    <ion-input type="text" text-right id="nombre" placeholder = "Nombre"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-input type="text" text-right id="apellidos" placeholder = "Apellidos"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-input type="text" text-right id="input" placeholder = "Correo electrónico"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-input type="text" text-right id="input" placeholder = "Nombre"></ion-input>
+  </ion-card>
+  <br>
+  <br>
+  <ion-card>
+    <ion-input type="date" placeholder = "Fecha de entrada"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-input type="date" placeholder = "Fecha de salida"></ion-input>
+  </ion-card>
+  <ion-button color = "success" expand = "full">Buscar Disponibilidad</ion-button>
+</ion-content>

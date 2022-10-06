@@ -25,3 +25,18 @@
 #container a {
   text-decoration: none;
 }
+
+ion-content.background{
+  --background: url(/assets/images/rocanegra.jpg) 0 0/100% 100% no-repeat;
+}
+
+ion-card.barra {
+  --background:white !important;
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+}
+
+ion-list.languages{
+  width: 5%;
+}
