@@ -27,6 +27,18 @@ const routes: Routes = [
     path: 'habitaciones',
     loadChildren: () => import('./pages/habitaciones/habitaciones.module').then( m => m.HabitacionesPageModule)
   },
+  {
+    path: 'checkin',
+    loadChildren: () => import('./pages/checkin/checkin.module').then( m => m.CheckinPageModule)
+  },
+  {
+    path: 'contacto',
+    loadChildren: () => import('./pages/contacto/contacto.module').then( m => m.ContactoPageModule)
+  },
+  {
+    path: 'chat',
+    loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
+  },
 ];
 
 @NgModule({

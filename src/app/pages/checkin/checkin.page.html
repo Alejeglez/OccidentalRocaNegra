@@ -18,6 +18,7 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content pading class="background">
   <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
     <ion-item lines="full">
@@ -51,20 +52,24 @@
       Introduzca un correo electrónico válido.
     </span>
     <ion-item lines="full">
+      <ion-label position="floating">Número de reserva</ion-label>
+      <ion-input length="10" formControlName="reserva" type="text" required></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.reserva.errors?.required">
+      El número de reserva es obligatorio.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.reserva.errors?.pattern">
+      Introduzca un número.
+    </span>
+    <ion-item lines="full">
       <ion-label position="stacked">Fecha de entrada</ion-label>
       <ion-input formControlName = "date" type="date" required></ion-input>
     </ion-item>
     <span class="error ion-padding" *ngIf="isSubmitted && errorControl.date.errors?.required">
       Seleccione una fecha.
     </span>
-    <ion-item lines="full">
-      <ion-label position="stacked">Fecha de salida</ion-label>
-      <ion-input formControlName = "date" type="date" required></ion-input>
-    </ion-item>
-    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.date.errors?.required">
-      Seleccione una fecha.
-    </span>
 
-  <ion-button type = "submit" color = "success" expand = "full">Buscar Disponibilidad</ion-button>
+    <ion-button type = "submit" expand = "block">Buscar reserva</ion-button>
   </form>
+
 </ion-content>

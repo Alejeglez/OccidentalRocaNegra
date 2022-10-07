@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
+import { CheckinPageRoutingModule } from './checkin-routing.module';
+import { CheckinPage } from './checkin.page';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { ReservarPageRoutingModule } from './reservar-routing.module';
-import { ReservarPage } from './reservar.page';
-import { ReactiveFormsModule } from '@angular/forms';
-
 
 @NgModule({
   imports: [
     CommonModule,
     IonicModule,
-    ReservarPageRoutingModule,
+    CheckinPageRoutingModule,
     FormsModule,
     ReactiveFormsModule
   ],
-  declarations: [ReservarPage]
+  declarations: [CheckinPage]
 })
-export class ReservarPageModule {}
+
+export class CheckinPageModule {}
