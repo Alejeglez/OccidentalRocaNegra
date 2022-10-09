@@ -39,6 +39,18 @@ const routes: Routes = [
     path: 'chat',
     loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
   },
+  {
+    path: 'carta',
+    loadChildren: () => import('./pages/carta/carta.module').then( m => m.CartaPageModule)
+  },
+  {
+    path: 'eventos',
+    loadChildren: () => import('./pages/eventos/eventos.module').then( m => m.EventosPageModule)
+  },
+  {
+    path: 'club',
+    loadChildren: () => import('./pages/club/club.module').then( m => m.ClubPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,23 @@
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+ion-content.background{
+    --background: url(/assets/images/rocanegra.jpg) 0 0/100% 100% no-repeat;
+  }
+
+  ion-list.languages{
+    width: 5%;
+  }
+  
+  form{
+    color: white;
+    background-color: black;
+  }

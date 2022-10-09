@@ -1,0 +1,23 @@
+<ion-header [translucent]="true" collapse = "ios">
+  <ion-toolbar>
+    <ion-title routerLink = "/home">
+      Occidental Roca Negra
+    </ion-title>
+    <ion-buttons slot = "start">
+    <ion-menu-button menu = "main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-list slot="end" id = "languages">
+      <ion-item>
+        <ion-select interface="dropdownselection" placeholder="Idioma" >
+          <ion-select-option value="español">Esp</ion-select-option>
+          <ion-select-option value="ingles">Eng</ion-select-option>
+          <ion-select-option value="aleman">Deu</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content>

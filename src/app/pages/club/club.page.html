@@ -1,0 +1,96 @@
+<ion-header [translucent]="true" collapse = "ios">
+  <ion-toolbar>
+    <ion-title routerLink = "/home">
+      Occidental Roca Negra
+    </ion-title>
+    <ion-buttons slot = "start">
+    <ion-menu-button menu = "main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-list slot="end" id = "languages">
+      <ion-item>
+        <ion-select interface="dropdownselection" placeholder="Idioma" >
+          <ion-select-option value="español">Esp</ion-select-option>
+          <ion-select-option value="ingles">Eng</ion-select-option>
+          <ion-select-option value="aleman">Deu</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content pading class="background">
+  <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input formControlName = "name" type="text" required></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.name.errors?.required">
+      El nombre es obligatorio.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.name.errors?.minlength">
+      El nombre tiene un mínimo de dos carácteres.
+    </span>
+    <ion-item lines="full">
+      <ion-label position="floating">Apellidos</ion-label>
+      <ion-input formControlName="surname" type="text" required></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.surname.errors?.required">
+      El apellido es obligatorio.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.surname.errors?.minlength">
+      El apellido tiene un mínimo de dos carácteres.
+    </span>
+    <ion-item lines="full">
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input formControlName = "email" type="email" required></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.required">
+      El correo electrónico es obligatorio.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.pattern">
+      Introduzca un correo electrónico válido.
+    </span>
+    <ion-item lines="full">
+      <ion-label position="floating">Domicilio</ion-label>
+      <ion-input formControlName = "domicilio" type="text" required></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.domicilio.errors?.required">
+      El domicilio es obligatorio.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.domicilio.errors?.pattern">
+      Introduzca un domicilio válido.
+    </span>
+    <ion-item lines="full">
+      <ion-label position="floating">Código de referido</ion-label>
+      <ion-input  type="text" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Acepto los términos y condiciones</ion-label>
+      <ion-checkbox slot="end" formControlName = "terminos"></ion-checkbox>
+    </ion-item>
+    <span>
+      Debes aceptar los términos y servicios para continuar.
+    </span>
+    <ion-item>
+      <ion-label>Quiero recibir notificaciones de las ofertas y noticias de la cadena.</ion-label>
+      <ion-checkbox slot="end"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>He conocido la marca a través de:</ion-label>
+      <ion-list>
+        <ion-item>
+          <ion-select interface="popover" placeholder="Selecciona una: ">
+            <ion-select-option value="redes">Redes sociales</ion-select-option>
+            <ion-select-option value="email">Correo electrónico</ion-select-option>
+            <ion-select-option value="web">Anuncios</ion-select-option>
+            <ion-select-option value="conocidos">Conocidos</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-item>
+    
+    
+
+  <ion-button type = "submit" color = "success" expand = "full">Buscar Disponibilidad</ion-button>
+  </form>
+</ion-content>
