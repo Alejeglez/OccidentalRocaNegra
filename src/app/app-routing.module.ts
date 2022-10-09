@@ -12,10 +12,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'contact',
-    loadChildren: () => import('./pages/contact/contact.module').then( m => m.ContactPageModule)
-  },
-  {
     path: 'about',
     loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
   },
@@ -32,10 +28,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/checkin/checkin.module').then( m => m.CheckinPageModule)
   },
   {
-    path: 'contacto',
-    loadChildren: () => import('./pages/contacto/contacto.module').then( m => m.ContactoPageModule)
-  },
-  {
     path: 'chat',
     loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
   },
@@ -50,6 +42,26 @@ const routes: Routes = [
   {
     path: 'club',
     loadChildren: () => import('./pages/club/club.module').then( m => m.ClubPageModule)
+  },
+  {
+    path: 'danos-tu-opinion',
+    loadChildren: () => import('./pages/danos-tu-opinion/danos-tu-opinion.module').then( m => m.DanosTuOpinionPageModule)
+  },
+  {
+    path: 'index',
+    loadChildren: () => import('./pages/index/index.module').then( m => m.IndexPageModule)
+  },
+  {
+    path: 'privacity',
+    loadChildren: () => import('./pages/privacity/privacity.module').then( m => m.PrivacityPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'sign-up',
+    loadChildren: () => import('./pages/sign-up/sign-up.module').then( m => m.SignUpPageModule)
   },
 ];
 

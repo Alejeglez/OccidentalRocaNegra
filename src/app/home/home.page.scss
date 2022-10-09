@@ -26,17 +26,24 @@
   text-decoration: none;
 }
 
+ion-content{
+
+  --ion-background-color:#044df8;
+}
+
+ion-header{
+
+  --ion-background-color:#044df8;
+}
+
 ion-content.background{
-  --background: url(/assets/images/rocanegra.jpg) 0 0/100% 100% no-repeat;
+  --background: url(/assets/images/roca_negra.jpg) 0 0/100% 100% no-repeat;
 }
 
-ion-card.barra {
-  --background:white !important;
-  position: absolute;
-  bottom: 0;
-  width: 95%;
+ion-card.barra{
+  font-size: x-large;
 }
 
-ion-list.languages{
-  width: 5%;
+ion-footer{
+  --ion-background-color:#044df8;
 }

@@ -1,0 +1,81 @@
+<ion-header [translucent]="true" collapse = "ios">
+  <ion-toolbar>
+    <ion-title>
+      Occidental Roca Negra
+    </ion-title>
+    <ion-buttons slot = "start">
+    <ion-menu-button menu = "main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-list slot="end" id = "languages">
+      <ion-item>
+        <ion-select interface="dropdownselection" placeholder="Idioma" >
+          <ion-select-option value="español">Esp</ion-select-option>
+          <ion-select-option value="ingles">Eng</ion-select-option>
+          <ion-select-option value="aleman">Deu</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background" color = "white">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="chatbubbles-outline" routerLink="/chat"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> 
+<ion-fab horizontal="start" vertical="bottom" slot="fixed">
+    <ion-fab-button color="dark">
+      <ion-icon md="share-social-outline" ios="share-social-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="light" href = "https://es-la.facebook.com/barcelohotels/">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light" href="https://twitter.com/barcelohoteles" >
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light" href="https://www.instagram.com/barcelohotelsresorts/" >
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <ion-button color  = "light" expand = "full" routerLink = "/reservar">
+    <ion-label>Reserva ahora:</ion-label>
+    <ion-icon name = "search-circle-outline" color  = "secondary"></ion-icon>
+  </ion-button>
+
+  <ion-card class = "barra" color = "dark">
+    <ion-grid expand = "full">
+        <ion-row class="ion-text-center">
+            <ion-col size="3" routerLink="/page1">
+                <ion-icon name="book-outline" color="primary" size="large"></ion-icon>
+                <p>Reservas</p>
+            </ion-col>
+            <ion-col size="3" routerLink="/checkin">
+                <ion-icon name="card-outline" color="primary" size="large"></ion-icon>
+                <p>Club</p>
+            </ion-col>
+            <ion-col size="3" routerLink="/checkin">
+              <ion-icon name="checkmark-circle-outline" color="primary" size="large"></ion-icon>
+              <p>Check-in</p>
+            </ion-col>
+            
+            <ion-col size="3" routerLink="/chat">
+              <ion-icon name="chatbubbles-outline" color="primary" size="large"></ion-icon>
+              <p>Chat</p>
+            </ion-col>            
+        </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>
+

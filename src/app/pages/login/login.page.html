@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-img style="width: 365px; height: 100px;" src="/assets/images/logo_barcelo.png"></ion-img> 
+</ion-header>
+
+<ion-content padding class="background">
+  <ion-card class="cuadro">
+    <ion-card-header>
+      <ion-card-title class="inicia">
+        <div class= "ion-text-center">
+          Inicia sesión
+        </div>
+      </ion-card-title>
+      <ion-card-content class="cuestionario">
+        Correo electrónico
+        <ion-item>
+          <ion-input placeholder="123@gmail.com" type="email" pattern="\w+@\w+.(com|es|org)" required="true"></ion-input>
+        </ion-item>
+        Contraseña
+        <ion-item>
+          <ion-input placeholder="**" type="password" required="true"></ion-input>
+        </ion-item>
+        <ion-button class="boton" routerLink="/index" color="secondary" expand="block">
+          Inicia sesión
+        </ion-button> 
+        <div class= "ion-text-center">
+        ¿Aún no tienes cuenta? <br>
+        <a href = "/sign-up">Crea una</a>
+      </div>
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

@@ -1,6 +1,6 @@
 <ion-header [translucent]="true" collapse = "ios">
   <ion-toolbar>
-    <ion-title routerLink = "/home">
+    <ion-title routerLink = "/index">
       Occidental Roca Negra
     </ion-title>
     <ion-buttons slot = "start">
@@ -20,6 +20,28 @@
 
 
 <ion-content pading class="background">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="chatbubbles-outline" routerLink="/chat"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> 
+<ion-fab horizontal="start" vertical="bottom" slot="fixed">
+    <ion-fab-button color="dark">
+      <ion-icon md="share-social-outline" ios="share-social-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="light" href = "https://es-la.facebook.com/barcelohotels/">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light" href="https://twitter.com/barcelohoteles" >
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light" href="https://www.instagram.com/barcelohotelsresorts/" >
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  
   <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
     <ion-item lines="full">
       <ion-label position="floating">Nombre</ion-label>
@@ -69,7 +91,7 @@
       Seleccione una fecha.
     </span>
 
-    <ion-button type = "submit" expand = "block">Buscar reserva</ion-button>
+    <ion-button routerLink = "/index" type = "submit" expand = "block">Buscar reserva</ion-button>
   </form>
 
 </ion-content>

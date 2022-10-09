@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ContactPageRoutingModule } from './contact-routing.module';
+import { DanosTuOpinionPageRoutingModule } from './danos-tu-opinion-routing.module';
 
-import { ContactPage } from './contact.page';
+import { DanosTuOpinionPage } from './danos-tu-opinion.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ContactPageRoutingModule
+    DanosTuOpinionPageRoutingModule
   ],
-  declarations: [ContactPage]
+  declarations: [DanosTuOpinionPage]
 })
-export class ContactPageModule {}
+export class DanosTuOpinionPageModule {}
