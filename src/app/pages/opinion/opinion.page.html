@@ -1,6 +1,6 @@
 <ion-header [translucent]="true" collapse = "ios">
   <ion-toolbar>
-    <ion-title>
+    <ion-title routerLink = "/index">
       Occidental Roca Negra
     </ion-title>
     <ion-buttons slot = "start">
@@ -18,7 +18,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding class="background" color = "white">
+<ion-content pading class="background">
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button>
       <ion-icon name="chatbubbles-outline" routerLink="/chat"></ion-icon>
@@ -40,42 +40,9 @@
       </ion-fab-button>
     </ion-fab-list>
   </ion-fab>
-  
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-    <ion-button color  = "light" expand = "full" routerLink = "/reservar">
-    <ion-label>Reserva ahora:</ion-label>
-    <ion-icon name = "search-circle-outline" color  = "secondary"></ion-icon>
-  </ion-button>
-
-  <ion-card class = "barra" color = "dark">
-    <ion-grid expand = "full">
-        <ion-row class="ion-text-center">
-            <ion-col size="3" routerLink="/page1">
-                <ion-icon name="book-outline" color="primary" size="large"></ion-icon>
-                <p>Reservas</p>
-            </ion-col>
-            <ion-col size="3" routerLink="/club">
-                <ion-icon name="card-outline" color="primary" size="large"></ion-icon>
-                <p>Club</p>
-            </ion-col>
-            <ion-col size="3" routerLink="/checkin">
-              <ion-icon name="checkmark-circle-outline" color="primary" size="large"></ion-icon>
-              <p>Check-in</p>
-            </ion-col>
-            
-            <ion-col size="3" routerLink="/chat">
-              <ion-icon name="chatbubbles-outline" color="primary" size="large"></ion-icon>
-              <p>Chat</p>
-            </ion-col>            
-        </ion-row>
-    </ion-grid>
-  </ion-card>
+  <ion-item>
+    <ion-label>Danos tu opinión: </ion-label>
+    <ion-textarea rows="6" cols="20" placeholder="Introduce tu comentario:"></ion-textarea>
+  </ion-item>
+  <ion-button  type = "reset" expand = "full" color = "success" routerLink = "/index">Enviar comentario</ion-button>
 </ion-content>
-

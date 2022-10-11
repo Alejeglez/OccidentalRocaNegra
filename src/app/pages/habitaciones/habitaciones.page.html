@@ -19,13 +19,18 @@
 </ion-header>
 
 <ion-content pading class="background">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="chatbubbles-outline" routerLink="/chat"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> 
   <ion-card id = "classic">
     <ion-title>Classic</ion-title>
     <ion-img src = "/assets/images/clasicc.jpg"></ion-img>
       <ion-list id = "classiclist">
         <ion-item>
           <ion-label>
-            Habitación con dos camas (0,9x2m), Sat-TV, caja fuerte(gratis).
+            Habitación con dos camas (0,9x2m),<br> Sat-TV, caja fuerte(gratis).
           </ion-label>
         </ion-item>
         <ion-item>
@@ -35,12 +40,12 @@
         </ion-item>
         <ion-item>
           <ion-label>
-          Sofá cama para el tercer adulto o dos niños.
+          Sofá cama para el tercer<br> adulto o dos niños.
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Baño con WC, secador de pelo y espejo de aumento.
+            Baño con WC, secador de pelo y<br> espejo de aumento.
           </ion-label>
         </ion-item>
         <ion-item>
@@ -50,7 +55,7 @@
         </ion-item>
         <ion-item>
           <ion-label>
-            Ocupación máxima: 3 adultos o 2 adultos y 2 niños (cuna aparte)
+            Ocupación máxima: 3 adultos o 2 <br>adultos y 2 niños (cuna aparte)
           </ion-label>
         </ion-item>
       </ion-list>
@@ -63,37 +68,38 @@
       <ion-list id = "classiclist2">
         <ion-item>
           <ion-label>
-            Habitación con dos camas (0,9x2m), Sat-TV, caja fuerte(gratis).
+            Habitación con dos camas (0,9x2m),<br> Sat-TV, caja fuerte(gratis).
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Mini-nevera, aire acondicionado, kettle.
+            Mini-nevera, aire acondicionado,<br> kettle.
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Sofá cama para el tercer adulto o dos niños.
+            Sofá cama para el tercer adulto o<br> dos niños.
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Baño con ducha, WC y secador de pelo.
+            Baño con ducha, WC y<br> secador de pelo.
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Balcón o terraza amueblado con vistas al mar.
+            Balcón o terraza amueblado<br> con vistas al mar.
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Ocupación máxima: 3 adultos o 2 adultos y 2 niños (cuna cabe aparte)
+            Ocupación máxima: 3 adultos o<br> 2 adultos y 2 niños<br> (cuna cabe aparte)
           </ion-label>
         </ion-item>
       </ion-list>
       <ion-button color = "success" expand = "full" routerLink = "/reservar">Buscar Disponibilidad</ion-button>
   </ion-card>
+
 
   <ion-card id = "classic3">
     <ion-title>Honeymoon</ion-title>
@@ -101,7 +107,7 @@
       <ion-list id = "classiclist3">
         <ion-item>
           <ion-label>
-            Habitación con cama de matrimonio, Sat-TV, caja fuerte (gratis).
+            Habitación con cama de matrimonio<br>, Sat-TV, caja fuerte (gratis).
           </ion-label>
         </ion-item>
         <ion-item>
@@ -111,50 +117,12 @@
         </ion-item>
         <ion-item>
           <ion-label>
-            Sofá cama para el tercer adulto o dos niños.
+            Sofá cama para el tercer adulto o<br> dos niños.
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Baño con ducha, WC, secador de pelo, albornoz y slippers.
-          </ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            Balcón grande con cama balinesa.
-          </ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            Ocupación máxima: 3 adultos o 2 adultos y 2 niños (cuna cabe aparte)
-          </ion-label>
-        </ion-item>
-      </ion-list>
-      <ion-button color = "success" expand = "full" routerLink = "/reservar">Buscar Disponibilidad</ion-button>
-  </ion-card>
-
-  <ion-card id = "classic3">
-    <ion-title>Honeymoon</ion-title>
-    <ion-img src = "/assets/images/clasicc3.jpg"></ion-img>
-      <ion-list id = "classiclist3">
-        <ion-item>
-          <ion-label>
-            Habitación con cama de matrimonio, Sat-TV, caja fuerte (gratis).
-          </ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            Mini-nevera, aire acondicionado.
-          </ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            Sofá cama para el tercer adulto o dos niños.
-          </ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>
-            Baño con ducha, WC, secador de pelo, albornoz y slippers.
+            Baño con ducha, WC,secador de<br> pelo, albornoz y slippers.
           </ion-label>
         </ion-item>
         <ion-item>
@@ -164,7 +132,7 @@
         </ion-item>
         <ion-item>
           <ion-label>
-            Ocupación máxima: 3 adultos o 2 adultos y 2 niños (cuna cabe aparte)
+            Ocupación máxima: 3 adultos o <br>2 adultos y 2 niños <br>(cuna cabe aparte)
           </ion-label>
         </ion-item>
       </ion-list>
@@ -177,32 +145,32 @@
       <ion-list id = "classiclist4">
         <ion-item>
           <ion-label>
-            Habitación con dos camas (0,90x2m), Sat-TV, caja fuerte (gratis).
+            Habitación con dos camas <br>(0,90x2m), Sat-TV, caja fuerte (gratis).
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Mini-nevera, aire acondicionado, kettle.
+            Mini-nevera, aire acondicionado,<br> kettle.
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Sofá cama para el tercer adulto o dos niños.
+            Sofá cama para el tercer adulto<br> o dos niños.
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Baño con ducha, WC y secador de pelo.
+            Baño con ducha, WC <br>y secador de pelo.
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Balcón o terraza amueblado con vistas al mar.
+            Balcón o terraza amueblado<br> con vistas al mar.
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Ocupación máxima: 3 adultos o 2 adultos y 2 niños (cuna cabe aparte)
+            Ocupación máxima: 3 adultos o <br>2 adultos y 2 niños <br>(cuna cabe aparte)
           </ion-label>
         </ion-item>
       </ion-list>
@@ -216,7 +184,7 @@
       <ion-list id = "classiclist5">
         <ion-item>
           <ion-label>
-            Sat-TV, caja fuerte (gratis), mini-nevera, sofá-cama.
+            Sat-TV, caja fuerte (gratis),<br> mini-nevera, sofá-cama.
           </ion-label>
         </ion-item>
         <ion-item>
@@ -226,12 +194,12 @@
         </ion-item>
         <ion-item>
           <ion-label>
-            Sofá cama para el tercer adulto o dos niños.
+            Sofá cama para el tercer adulto o<br> dos niños.
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            2 Baños con ducha, WC y secador de pelo.
+            2 Baños con ducha, WC y<br> secador de pelo.
           </ion-label>
         </ion-item>
         <ion-item>
@@ -241,7 +209,7 @@
         </ion-item>
         <ion-item>
           <ion-label>
-            Ocupación máxima: 5 adultos o 2 adultos y 4 niños (cuna cabe aparte)
+            Ocupación máxima: 5 adultos o <br>2 adultos y 4 niños <br>(cuna cabe aparte)
           </ion-label>
         </ion-item>
       </ion-list>
